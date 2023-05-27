@@ -1,0 +1,15 @@
+name: Hello World Workflow
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Wait for 3 seconds
+        run: sleep 3
+        
+      - name: Echo Hello World
+        run: echo "Hello World"
